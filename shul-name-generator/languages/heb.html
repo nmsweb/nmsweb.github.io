@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html dir = "rtl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Shul name generator</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="../styles.css" type = "text/css">
+        <script type = "text/javascript" src="../scripts/hebscripts.js"></script>
+        <meta name="viewport" content = "width = device-width, initial-scale=1, maximum-scale=1">
+    </head>
+
+    <body style="background-color:#e2f3f5">
+        <a onclick = "open_eng()" class="btn41-43 btn-41" id = "eng_button">English</a>
+        <br>
+        <br>
+        <h1>ברוכים הבאים למחולל שמות בתי כנסת!</h1>
+        <hr>
+        <a onclick="display_gen()" class="btn41-43 btn-41" id = "first_check">יצירת שם רנדומלי</a>
+        <h2>או</h2>
+        <a onclick="display_name()" class="btn41-43 btn-41" id = "second_check">יצירת שם לבית כנסת על שם מישהו</a>
+        <hr>
+        <div style="display: none;" id = "first_div"><h1>ליצירת שם:</h1>
+            <a onclick = "generator1()"  class="btn41-43 btn-41" id = "generate-button">
+            לחץ כאן
+            </a>
+            <p id = "result"></p>
+            <a onclick = "name_after()"  id = "alshem" class="btn41-43 btn-41 begins_hidden">
+            על שם
+            </a>
+            <p id = "donor"></p>
+            <a onclick = "copy_text()"  class="btn41-43 btn-41 begins_hidden" id = "copy_button">
+                העתק
+            </a>
+            <hr>
+        </div>
+        <div style="display: none;" id = "second_div">
+            <h1>ליצור שם לבית כנסת על שם מישהו:</h1>
+            <h3>שם פרטי:</h3>
+            <input type="text" lang = "he" id="f_name" value="" class = "text_input" onblur = "check_field('f_name')" onfocus="reset_field('f_name')">
+            <h3>שם משפחה:</h3>
+            <input type="text" lang = "he" id="l_name" value="" class = "text_input" onblur = "check_field('l_name')" onfocus="reset_field('l_name')">
+            <br>
+            <a onclick = "choose_name();"  class="btn41-43 btn-41" type = "submit">
+            ליצור
+            </a>
+            <input type = "number" id = "text_checkf" value = "0" hidden>
+            <input type = "number" id = "text_checkl" value = "0" hidden>
+        </div>
+        <!-- Load external JavaScript -->
+        <script src="../scripts/hebscripts.js"></script>
+        
+    </body>
+
+</html>

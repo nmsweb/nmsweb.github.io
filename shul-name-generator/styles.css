@@ -1,0 +1,269 @@
+/* Place your CSS styles in this file */
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+h1, h2, h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: #49493c;
+}
+
+
+p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: #100b8c;
+    font-size: large;
+}
+
+
+hr{
+  background-color: #678eb4;
+  height: 1px; 
+}
+
+.begins_hidden{
+  visibility: hidden;
+}
+
+
+.btn41-43 {
+  align-content: center;
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.btn-41 {
+  border: 2px solid #678eb4;
+  border-style: outset;
+  z-index: 1;
+  color: #3a320e;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #7bcace;
+  transition: all 0.3s ease;
+}
+
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+  border-style: inset;
+}
+
+
+.toggler-wrapper {
+  align-content: center;  
+  display: block;
+  width: 45px;
+  height: 25px;
+  cursor: pointer;
+  align-content: center;  
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggler-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
+  background-color: #7bcace;
+}
+
+.toggler-wrapper .toggler-slider {
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.toggler-wrapper .toggler-knob {
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+
+.toggler-wrapper.style-1 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+  left: calc(100% - 19px - 3px);
+}
+
+.toggler-wrapper.style-1 .toggler-knob {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  background-color: #e2f3f5;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: solid #678eb4;
+    outline: black;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #7bcace;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+
+  /* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 3.5px;
+   left: 3.5px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: #e2f3f5;
+}
+  
+
+.radio_button{
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 3px 3px 0 3px;
+    background: #fffdfd00;
+}
+
+
+.checkboxes label {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .checkboxes input {
+    vertical-align: middle;
+  }
+  .checkboxes label span {
+    vertical-align: middle;
+  }
+  .checkboxes 
+  {
+    margin-left: 45%;
+  }
+
+
+
+#eng_button{
+  float: left;
+  height: 20px;
+}
+
+#heb_button{
+  float: right;
+  height: 20px;
+}
+
+.text_input{
+  border-color: #49493c;
+  border-style: solid;
+  display:block;
+  margin: auto;
+  background-color:#7bcace;
+  color:#100b8c;
+}
+
+
+.copy_button_after{
+  align-content: center;
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background-color: #7bcace;
+  outline: none !important;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  border: 2px solid #678eb4;
+  z-index: 1;
+  color: #3a320e;
+}
